@@ -65,7 +65,7 @@ class Item extends Component {
     delete props.selected;
 
     return (
-      <div style={styles.navPaneItem}>
+      <div className={`win-navPaneItem ${this.props.selected ? 'selected' : ''} ${this.props.className ? this.props.className : ''}`} style={styles.navPaneItem}>
         <div style={styles.contentWrapper}>
           <StyleRoot>
             <Title

@@ -63,6 +63,7 @@ class Item extends Component {
 
     return (
       <a
+        className={`win-pane-item ${this.props.selected ? 'selected' : ''} ${this.props.className ? this.props.className : ''}`}
         onClick={onSelect}
         style={componentStyle}
       >
